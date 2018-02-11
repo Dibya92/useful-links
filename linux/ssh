@@ -1,0 +1,28 @@
+>>How to create private/public key pair for ssh?
+command: ssh-keygen -f <key-name> -C <email address>
+command:ssh-keygen -f <key-name>
+
+------------------------<URL>-----------------------------
+
+Check this link for more information:
+https://help.github.com/articles/connecting-to-github-with-ssh/
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+>>How to ssh from bash shell?
+command:ssh -i <path-to-private-key> -p <port no like 22> <username@IP/Hostname like ubuntu@18.219.83.248>
+>>How to create aliases for ssh?
+command:alias my-ec2="ssh -i <path-to-private-key> -p <port no like 22> <username@IP/Hostname like ubuntu@18.219.83.248>"
+
+------------------------<URL>-----------------------------
+
+Some links to look for:
+http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
+
+
+
+
+
+
