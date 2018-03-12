@@ -1,2 +1,3 @@
 How dns works?
 https://howdns.works/
+https://www.verisign.com/en_US/website-presence/online/how-dns-works/index.xhtml
