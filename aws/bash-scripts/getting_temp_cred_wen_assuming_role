@@ -1,1 +1,21 @@
+>>>In Bash-Shell to capture the values of temporary access_id,access_key,and token 
+$temp="This is a test string having space as delimiters"
+To convert string to array we can use (arr=($temp)),By default delimiter will be new line
+And then to get each element
+echo ${arr[0]}
+
+CODE:
+
+STS_CREDS=($(aws sts assume-role --role-arn arn:aws:iam::459714977904:role/uk-life-finance/uk-life-finance-deployer --role-session-name role_session --query 'Credentials.[SecretAccessKey, SessionToken, AccessKeyId]' --output text))
+
+echo ${STS_CREDS[0]}
+echo ${STS_CREDS[1]}
+echo ${STS_CREDS[2]}
+
+And then adding the temp credentials to the current shell session
+
+export AWS_SECRET_ACCESS_KEY=${STS_CREDS[0]}
+export AWS_SESSION_TOKEN=${STS_CREDS[1]}
+export AWS_ACCESS_KEY_ID=${STS_CREDS[2]}
+
 
