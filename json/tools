@@ -1,0 +1,6 @@
+1>JMESPath is a query language for JSON.Specially used in result return by aws commands when using server-side filtering
+URI:http://jmespath.org/
+
+2>jq is like sed for JSON data - you can use it to slice and filter and map and transform structured data with the same ease 
+that sed, awk, grep and friends let you play with text.
+URI:https://stedolan.github.io/jq/
