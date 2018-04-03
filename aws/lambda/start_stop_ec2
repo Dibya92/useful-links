@@ -1,3 +1,5 @@
 Scheduling Start and Stop of ec2 instances:
-https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/
+>>https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-cloudwatch/
+Scheduling Start and Stop of ec2 instances by tag:
+>>http://blog.conygre.com/2016/11/18/starting-and-stopping-ec2-instances-using-a-lambda-and-cut-your-aws-bill-in-half/
 
