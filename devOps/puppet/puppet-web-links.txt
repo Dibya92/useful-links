@@ -1,3 +1,9 @@
 Medium : short description about puppet and how it works?
 Part 1 : https://medium.com/@harittweets/learn-puppet-part-1-c00859a9956c
 Part 2 : https://medium.com/@harittweets/learn-puppet-part-2-37248559dc1
+
+Puppet Hiera Tutorial with Example Configuration
+uri = https://www.slashroot.in/puppet-hiera-tutorial-example-configuration
+
+Learn Yaml
+https://learnxinyminutes.com/docs/yaml/
