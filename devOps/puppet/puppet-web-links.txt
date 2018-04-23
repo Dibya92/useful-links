@@ -7,6 +7,8 @@ uri = https://www.slashroot.in/puppet-hiera-tutorial-example-configuration
 
 >>Using Puppet in windwos
 uri = https://puppet.com/docs/pe/2017.3/managing_windows_nodes/basic_tasks_and_concepts_in_windows.html
+============
+uri = http://wragg.io/getting-started-with-puppet-on-windows/
 
 >>Puppet Tuitorials
 https://www.example42.com/tutorials/PuppetTutorial/
