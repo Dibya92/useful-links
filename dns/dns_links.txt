@@ -1,3 +1,13 @@
 How dns works?
 https://howdns.works/
 https://www.verisign.com/en_US/website-presence/online/how-dns-works/index.xhtml
+
+============================
+
+TOP LEVEL DOMAIN DATABASE
+https://www.iana.org/domains/root/d
+
+============================
+
+To GET INFO ABOUT PARTICULAR DOMAIN
+https://whois.icann.org
