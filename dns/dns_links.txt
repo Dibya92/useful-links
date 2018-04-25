@@ -15,9 +15,11 @@ https://whois.icann.org
 ============================
 UNDERSTANDING HOW TO USE NSLOOKUP COMMAND 
 https://activedirectorypro.com/use-nslookup-check-dns-records/
+https://www.lifewire.com/what-is-nslookup-817516
 
 Private Hosted Zone in AWS
 https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html
+
 
 Understanding Record Sets in Aws
 https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html
