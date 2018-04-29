@@ -1,1 +1,6 @@
 
+#Use Get-Command <PS command> to find how to use the command. There are two types of users ADMINISTRATORS and STANDARD.
+
+Get-LocalUser (Gets local user accounts)
+Get-LocalGroup(Gets the local security groups)
+Get-LocalGroupMember(Gets members from a local group)
