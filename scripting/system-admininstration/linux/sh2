@@ -1,0 +1,11 @@
+#ADDING USER
+sudo useradd <user-name>
+
+#CHANGING PASSWORD
+passwd <user-name>
+
+#REMOVING USER
+sudo userdel <user-name>
+type sudo userdel -r <user-name> to also delete their home folder and files.
+
+
