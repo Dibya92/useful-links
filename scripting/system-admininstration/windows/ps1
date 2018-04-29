@@ -4,3 +4,15 @@
 Get-LocalUser (Gets local user accounts)
 Get-LocalGroup(Gets the local security groups)
 Get-LocalGroupMember(Gets members from a local group)
+
+========================================================================================================================
+
+#TO ADD/REMOVE USER USING CMD NET COMMAND
+
+- To change a password, type "net user (username) *". Don't type the quotes, and do not forget the star.
+- To add a user, type "net user (username) /ADD". Don't type the quotes.
+  net user [username [password | *] [options]] [/domain]
+- To delete a user, type "net user (username) /DELETE". Don't type the quotes.
+  net user username [/delete] [/domain]
+- Type in "net accounts/?" for help on the net accounts command. You can use this to force log-offs and set expiration times on user accounts.
+  If you need to do much more, try typing in all of the suggested net commands with a "/?" at the end. Try looking on a search engine for help on how to use the command.
