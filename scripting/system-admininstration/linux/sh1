@@ -4,7 +4,7 @@
 1)To pass command as super/root user of OS type [ sudo <command> ] ,this is like windows UAC feature.
 
 2)To change user use substitute user command [sudo su <user-name>] ,if you don't specify any user you are substituted as root user i.e 
-  [sudo su] 
+  [sudo su] or [sudo -i]
 
 3)To get The sudoers file located at: /etc/sudoers  file, [cat /etc/sudoers] contains the rules that users must follow when using the sudo command.
 
