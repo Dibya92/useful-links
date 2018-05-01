@@ -1,0 +1,2 @@
+#Windows includes an RDP client by default,Command to connect to an remote instance type
+mstsc
