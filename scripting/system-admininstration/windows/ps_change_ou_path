@@ -1,0 +1,36 @@
+#Step-1 Run Get-ADComputer <Host-Name like EUW1LCSDBNPEW01> to get the details of current OU path.
+
+DistinguishedName : CN=EUW1LCSDBNPEW01,OU=green,OU=general,OU=applications,OU=nonprod,DC=aviva001,DC=com
+DNSHostName       : EUW1LCSDBNPEW01.aviva001.com
+Enabled           : True
+Name              : EUW1LCSDBNPEW01
+ObjectClass       : computer
+ObjectGUID        : 480be65b-6d8c-4fde-a8ef-d99bf1f7f3fb
+SamAccountName    : EUW1LCSDBNPEW01$
+SID               : S-1-5-21-3577855752-3809690170-1012273602-30076
+UserPrincipalName : 
+
+
+#Step-2 Get the domain_join_user and domain_join_password form the userdata in aws console.
+
+#step-3 You can check the OU'S by running the below command if you are not aware of the full OU path,
+with filter like "mssql" or etc, and choose the proper OU path as required to ADD.
+
+Get-ADOrganizationalUnit -filter 'Name -like "mssql"'
+
+#Step-4 To add your host to OU use 
+
+$ou_path = "OU=mssql,OU=green,OU=general,OU=applications,OU=nonprod,DC=aviva001,DC=com"
+Get-ADComputer EUW1LCSDBNPEW01 |
+ Move-ADObject -TargetPath $ou_path -Credential aviva001.com\domainjoiner
+
+
+
+
+
+
+
+
+
+
+ 
