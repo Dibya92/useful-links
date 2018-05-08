@@ -19,3 +19,8 @@
   
   sudo puppet module generate <user_name>-<module_name> --environment <production>
   eg:sudo puppet module generate <dibya>-<IIS2k16> 
+
+>>TO INSTALL MODULES FROM https://forge.puppet.com
+
+  puppet module install<user_name>-<module_name> --version <3.1.0> --modulepath <relative or absolute dir path>
+  puppet module install puppetlabs-apache --version 3.1.0 --modulepath .\ or <absolute dir path>
