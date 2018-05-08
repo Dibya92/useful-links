@@ -15,12 +15,14 @@
   C:\Apps\Puppet\bin\puppet apply --modulepath="C:\Aviva\Application\Provisioning\modules"  "C:\Aviva\Application\Provisioning\manifests\lcs.pp"  --debug        --node_name_value=lcs_test     --logdest "C:\Aviva\Temp\puppetapply_provisioning_test.txt"
   <PUPPET BINARY REPO LOC>                      <PUPPET MODULE PATH>                                 <PUPPET MAIN MANIFEST FILE>               <DEBUG FLAG SET>   <PUPPET EXPLICIT NODE CALL>                   <PUPPET LOG FILE LOCATION>                        
 
->>TO GENERATE MODULES
+>>TO GENERATE PUPPET MODULES THROUGH PUPPET
   
   sudo puppet module generate <user_name>-<module_name> --environment <production>
-  eg:sudo puppet module generate <dibya>-<IIS2k16> 
+   # eg:sudo puppet module generate <dibya>-<IIS2k16> 
+   # OPTIONS --skip-interview - Do not attempt to perform a metadata interview. Primarily useful for automatic execution of puppet module generate.
+   # For more details check man page for puppet module ---> https://puppet.com/docs/puppet/5.3/man/module.html
 
 >>TO INSTALL MODULES FROM https://forge.puppet.com
 
   puppet module install<user_name>-<module_name> --version <3.1.0> --modulepath <relative or absolute dir path>
-  puppet module install puppetlabs-apache --version 3.1.0 --modulepath .\ or <absolute dir path>
+  # eg:puppet module install puppetlabs-apache --version 3.1.0 --modulepath .\ or <absolute dir path>
