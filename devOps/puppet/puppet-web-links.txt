@@ -17,6 +17,10 @@ Troubleshooting Puppet on Windows
 
 ============
   uri = http://wragg.io/getting-started-with-puppet-on-windows/
+  
+============
+ Using exec in win
+ uri = https://puppet.com/docs/puppet/5.4/resources_exec_windows.html
 
 >>Puppet Tuitorials
   https://www.example42.com/tutorials/PuppetTutorial/
