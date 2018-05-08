@@ -1,3 +1,6 @@
+>>Puppet CookBook (must check)
+  https://www.puppetcookbook.com/
+
 >>Medium : short description about puppet and how it works?
   Part 1 : https://medium.com/@harittweets/learn-puppet-part-1-c00859a9956c
   Part 2 : https://medium.com/@harittweets/learn-puppet-part-2-37248559dc1
