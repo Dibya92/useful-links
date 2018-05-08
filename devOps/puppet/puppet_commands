@@ -1,5 +1,16 @@
-TO RUN PUPPET AGENT MASTERLESSLY
+>>Troubleshooting Puppet on Windows
 
+ https://puppet.com/docs/pe/2017.2/trouble_windows.html
 
-C:\Apps\Puppet\bin\puppet apply --modulepath="C:\Aviva\Application\Provisioning\modules"  "C:\Aviva\Application\Provisioning\manifests\lcs.pp" --debug  --node_name_value=lcs_test     --logdest "C:\Aviva\Temp\puppetapply_provisioning_test.txt"
-<PUPPET BINARY REPO LOC>                      <PUPPET MODULE PATH>                                 <PUPPET MAIN MANIFEST FILE>                             <PUPPET EXPLICIT NODE CALL>         <PUPPET LOG FILE LOCATION>                        
+>>To GET PUPPET CONFIGURATION FILE PATH
+
+  puppet config print config
+
+>>To GET PUPPET DEFAULT MODULE DIR PATH
+
+  puppet config print modulepath
+
+>>TO RUN PUPPET AGENT MASTERLESSLY
+
+  C:\Apps\Puppet\bin\puppet apply --modulepath="C:\Aviva\Application\Provisioning\modules"  "C:\Aviva\Application\Provisioning\manifests\lcs.pp" --debug  --node_name_value=lcs_test     --logdest "C:\Aviva\Temp\puppetapply_provisioning_test.txt"
+  <PUPPET BINARY REPO LOC>                      <PUPPET MODULE PATH>                                 <PUPPET MAIN MANIFEST FILE>                             <PUPPET EXPLICIT NODE CALL>         <PUPPET LOG FILE LOCATION>                        
