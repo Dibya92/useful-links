@@ -1,0 +1,3 @@
+curl -v  -u "admin:admin123" --upload-file "C:\Users\dhard\Desktop\Moodys\wsg_artifacts.zip" http://nxs-pp.avivaaws.com/nexus/service/local/repositories/MigrationFactory/content/Moodys/wsg_artifacts.zip 
+
+curl -v  -u "admin:admin123" --upload-file "C:\Users\dhard\Desktop\Moodys\wsg_artifacts.zip" http://nxs-pp.avivaaws.com/nexus/service/local/repositories/MigrationFactory/content/UPP/wsg_artifacts.zip 
