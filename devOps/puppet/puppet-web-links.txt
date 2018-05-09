@@ -25,5 +25,8 @@ Troubleshooting Puppet on Windows
 >>Puppet Tuitorials
   https://www.example42.com/tutorials/PuppetTutorial/
 
+>>CREATING A PUPPET ERB TEMPLATE
+  https://rnelson0.com/2014/10/27/creating-a-puppet-erb-template/
+
 >>Learn Yaml
   https://learnxinyminutes.com/docs/yaml/
