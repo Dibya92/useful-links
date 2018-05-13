@@ -27,3 +27,9 @@
 
   puppet module install<user_name>-<module_name> --version <3.1.0> --modulepath <relative or absolute dir path>
   # eg:puppet module install puppetlabs-apache --version 3.1.0 --modulepath .\ or <absolute dir path>
+  
+ >>IF YOU CHOOSE TO EXECUTE POWERSHELL SCRIPTS USING PUPPET’S DEFAULT EXEC PROVIDER ON WINDOWS, YOU MUST SPECIFY THE REMOTESIGNED EXECUTION POLICY AS PART OF THE POWERSHELL.EXE INVOCATION
+ 
+ exec { 'test':
+  command => 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy remotesigned -file C:\test.ps1',
+}
