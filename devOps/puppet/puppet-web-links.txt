@@ -20,8 +20,11 @@ Troubleshooting Puppet on Windows
   
 ============
  Using exec in win
- uri = https://puppet.com/docs/puppet/5.4/resources_exec_windows.html
-
+  uri = https://puppet.com/docs/puppet/5.4/resources_exec_windows.html
+ 
+  If you choose to execute PowerShell scripts using Puppet’s default exec provider on Windows, you must specify the remotesigned       execution policy as part of the powershell.exe invocation check https://puppet.com/docs/puppet/5.5/resources_exec_windows.html     -----> Inline powershell scripts
+ 
+ 
 >>Puppet Tuitorials
   https://www.example42.com/tutorials/PuppetTutorial/
 
