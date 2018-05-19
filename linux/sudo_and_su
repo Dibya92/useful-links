@@ -1,0 +1,14 @@
+Launch an instance of your terminal (press CTRL+ALT+T or search for "terminal" in the Dash). This will give you your normal shell from which you can run commands or programmes without root access.
+
+To get root access, you can use one of a variety of methods:
+
+1)Run [sudo <command>] and type in your login password, if prompted, to run only that instance of the command as root. Next time you run another or the same command without the sudo prefix, you will not have root access.
+
+2)Run [sudo -i]. This will give you an interactive root shell. Note that the $ at the end of your prompt has changed to a #, indicating that you have root access. From here you can run any sequence of commands as root, or run the command exit to leave the root shell.
+
+3)Use the [su (substitute user) command] to get a root shell. This is effectively the same as using sudo -i. Note that when you use this command it will ask for the root password and not your login password. These are not the same. You may have to set or change the root password by running [sudo passwd root first].
+
+4)Run [sudo -s]. This gives you root access, but maintains your current SHELL. Shell specific settings, including your current directory, are preserved. For instance if you use bash (Ubuntu's default shell), aliases (and any other settings from ~/.bashrc) are kept when you switch to the root user.
+
+5)You can use sudo -i which will ask for your password. You need to be in the sudoers group for that or have an entry in the /etc/sudoers   file.
+ Another way is the command su - which will ask for the password of root, but accomplish the same.
