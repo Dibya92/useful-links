@@ -1,0 +1,8 @@
+To check puppet version
+  puppet --version
+
+To check facter version
+  facter --version
+  
+To check hiera version
+  hiera  --version
