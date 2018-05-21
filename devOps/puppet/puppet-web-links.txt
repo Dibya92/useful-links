@@ -36,3 +36,6 @@ https://glennsarti.github.io/blog/powershell-puppet-module-exit-codes/
 
 >>Learn Yaml
   https://learnxinyminutes.com/docs/yaml/
+  
+>>On the Bleeding Edge of Puppet(Converting & Formatting Data)
+  http://puppet-on-the-edge.blogspot.co.uk/
