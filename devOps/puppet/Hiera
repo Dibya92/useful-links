@@ -25,7 +25,7 @@ This page provides link for learning Hiera
 :yaml:
   :datadir: C:\Users\Dibya\Desktop\puppet-demo\udemy_workspace\code\environments\production\data
   
- >>STEP-2: Setup data/hieradata directory and corresponding file from where the values will be fetched
+ >>STEP-2: Setup data/hieradata directory and corresponding file from where the values will be fetched and also check the syntax from yaml linting
  
  examples: windows.yaml, x64.yaml
  
