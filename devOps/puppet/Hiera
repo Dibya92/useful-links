@@ -4,4 +4,50 @@ This page provides link for learning Hiera
  
  >>>https://www.linuxjournal.com/content/using-hiera-puppet
 
+ >>>https://www.craigdunn.org/2011/10/puppet-configuration-variables-and-hiera/
+ 
+ >>>https://www.craigdunn.org/2017/08/understanding-hierarchical-data-lookups/
+ 
+ =========================================================================================================================
+ 
+ To Check whether puppet can fetch the proper hiera variables or not:
+ 
+ >>>STEP-1: Setup hiera.yaml i.e config file for hiera
+ 
+---
+:backends: yaml
+ 
+:hierarchy: 
+  - "%{env}"
+  - "%{facts.os.architecture}"
+  - "%{facts.os.family}"
+
+:yaml:
+  :datadir: C:\Users\Dibya\Desktop\puppet-demo\udemy_workspace\code\environments\production\data
+  
+ >>STEP-2: Setup data/hieradata directory and corresponding file from where the values will be fetched
+ 
+ examples: windows.yaml, x64.yaml
+ 
+ windows.yaml contains:
+ 
+ ---
+ motd::message: "This is Windows 10 System \n"
+ 
+ x64.yaml contains:
+ 
+ ---
+ motd::message: "This is X64 System \n"
+ 
+ 
+ >>STEP-3: Test whether puppet can fetch the motd::message variable or not by running
+ 
+ puppet apply -e 'notice(hiera("motd::message"))' --hiera_config="C:\Users\Dibya\Desktop\puppet-demo\udemy_workspace\code\environments\production\hiera\hiera.yaml" --debug
+
+
+
+
+ 
+ 
+ 
 
