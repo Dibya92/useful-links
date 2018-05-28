@@ -13,8 +13,8 @@
 
 >>TO RUN PUPPET AGENT MASTERLESSLY
 
-  C:\Apps\Puppet\bin\puppet apply --modulepath="C:\Aviva\Application\Provisioning\modules"  "C:\Aviva\Application\Provisioning\manifests\lcs.pp"  --debug        --node_name_value=lcs_test     --logdest "C:\Aviva\Temp\puppetapply_provisioning_test.txt"
-  <PUPPET BINARY REPO LOC>                      <PUPPET MODULE PATH>                                 <PUPPET MAIN MANIFEST FILE>               <DEBUG FLAG SET>   <PUPPET EXPLICIT NODE CALL>                   <PUPPET LOG FILE LOCATION>                        
+  C:\Apps\Puppet\bin\puppet apply --modulepath="C:\Aviva\Application\Provisioning\modules" --hiera_config="C:\Aviva\Application\Provisioning\hiera\hiera.yaml" "C:\Aviva\Application\Provisioning\manifests\lcs.pp"        --debug          --node_name_value=lcs_test     --logdest "C:\Aviva\Temp\puppetapply_provisioning_test.txt"
+  <PUPPET BINARY REPO LOC>                      <PUPPET MODULE PATH>                                           <PUPPET CUSTOM HIERA CONFIG FILE PATH>                                                               <PUPPET MAIN MANIFEST FILE>               <DEBUG FLAG SET>     <PUPPET EXPLICIT NODE CALL>                   <PUPPET LOG FILE LOCATION>                        
 
 >>TO GENERATE PUPPET MODULES THROUGH PUPPET
   
