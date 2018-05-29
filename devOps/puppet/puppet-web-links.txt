@@ -5,8 +5,8 @@
   Part 1 : https://medium.com/@harittweets/learn-puppet-part-1-c00859a9956c
   Part 2 : https://medium.com/@harittweets/learn-puppet-part-2-37248559dc1
 
->>Puppet Hiera Tutorial with Example Configuration
-  uri = https://www.slashroot.in/puppet-hiera-tutorial-example-configuration
+ >>>A Online Book for puppet Implementation
+  uri = http://puppetlunch.com/contents/
 
 >>Using Puppet in windwos
   uri = https://puppet.com/docs/pe/2017.3/managing_windows_nodes/basic_tasks_and_concepts_in_windows.html
