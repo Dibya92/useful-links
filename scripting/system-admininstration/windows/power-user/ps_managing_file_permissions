@@ -1,7 +1,28 @@
-icacls
+#icacls
 
  Displays or modifies discretionary access control lists (DACLs) on specified files,
  and applies stored DACLs to files in specified directories.
  
-icacls <FileName> [/grant[:r] <Sid>:<Perm>[...]] [/deny <Sid>:<Perm>[...]] [/remove[:g|:d]] <Sid>[...]] [/t] [/c] [/l] [/q] [/setintegritylevel <Level>:<Policy>[...]]
-icacls <Directory> [/substitute <SidOld> <SidNew> [...]] [/restore <ACLfile> [/c] [/l] [/q]]
+ icacls <FileName> [/grant[:r] <Sid>:<Perm>[...]] [/deny <Sid>:<Perm>[...]] [/remove[:g|:d]] <Sid>[...]] [/t] [/c] [/l] [/q] [/setintegritylevel <Level>:<Policy>[...]]
+ icacls <Directory> [/substitute <SidOld> <SidNew> [...]] [/restore <ACLfile> [/c] [/l] [/q]]
+
+
+#To grant access to certain file/dir to everyone group i.e every local user account and as well as guest account 
+ which doesn't require password to authenticate. 
+  
+     icacls 'C:\Users\Dibya\Desktop\sample' /grant  'Everyone:(OI)(CI)(R)'
+             <File/Dir Path>                            <DACL>
+             
+ #To give access to only users who are authenticated by password use group Authenticated Users
+ 
+     icacls 'C:\Users\Dibya\Desktop\sample' /grant 'Authenticated Users:(OI)(CI)(R)'
+                <File/Dir Path>                          <DACL>
+                
+ #To run the same command in cmd use DOUBLE QUOTES for path 
+ 
+      icacls "C:\Vacation Pictures" /grant Authenticated Users:(OI)(CI)(R)
+                <File/Dir Path>                          <DACL>
+                
+ #TO remove group everyone/(any other group or users)  to access file/dir             
+               
+    "C:\Users\Dibya\Desktop\Sample" /Remove Everyone
