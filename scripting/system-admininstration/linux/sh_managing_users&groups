@@ -18,3 +18,16 @@
  Display only the group ID and the supplementary groups, enter:[id -G <vivek>] or [id -Gn <vivek?]
 
 6)Traditionally, the /etc/passwd file is used to keep track of every registered user that has access to a system. The /etc/passwd file is a colon-separated file that contains the following information: User name. Encrypted password.The UID (User ID) in linux is same to Group ID in Windows.
+
+
+====================================================================================================================================================
+
+#ADDING USER
+sudo useradd <user-name>
+
+#CHANGING PASSWORD
+passwd <user-name>
+
+#REMOVING USER
+sudo userdel <user-name>
+type sudo userdel -r <user-name> to also delete their home folder and files.
