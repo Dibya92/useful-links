@@ -1,1 +1,99 @@
 
+#chmod - ADDS AND REMOVES PERMISSIONS (Symbolic Format)
+ 
+  ->If you wanted to add or remove permissions to the user, 
+   use the command “chmod” with a “+” or “–“, along with the r (read), w (write), x (execute) attribute followed by 
+   the name of the directory or file.
+  
+  chmod +rwx “name of the file”
+  chmod –rwx “name of the directory”
+  
+  chmod +x  testfile - this would allow me to execute
+  chmod –wx testfile - this would take out write and executable permissions
+ 
+N.B: You'll Notice That This Only Changes the Permissions for the Owner of the File.
+
+#CHANGING PERMISSIONS FOR THE GROUP OWNERS & OTHERS
+
+  ->The command is similar to what we did before, but this time you add a “g” for group or “o” for other users.For owner use "u"
+
+  chmod g+w   testfile
+  chmod g-wx  testfile
+  chmod o+w   testfile
+  chmod o-rwx workfolder
+  chmod u+rwx workfolder
+  
+  ->Lastly you can change it for everyone: “u” for users, “g” for group, & “o” for others; uog or a (for all).
+
+  chmod ugo+rwx workfolder – will give read, write, execute to everyone
+  chmod   a=r   workfolder     – will give only read perission for everyone
+  
+  
+#PERMISSION IN NUMERIC MODE
+   
+   The above way of changing permissions will work fine but you may also need to know how to change permissions in numeric mode. 
+   chmod is used in much the same way, but instead of r, w, or x you will use numbers instead.
+   You basically add up the numbers depending on the level of permission you want to give.
+   
+   What are the numbers?
+
+   0 = No Permission
+
+   1 = Execute
+
+   2 = Write
+
+   4 = Read
+  
+  
+   chmod 777 workfolder  #Will give read, write, and execute permissions for everyone.
+   chmod 700 workfolder  #Will give read, write, and execute permission for the user, but nothing to everyone else.
+  
+  
+  
+ =====================================================================================================================================
+  
+  
+
+chgrp – CHANGING GROUPS OF FILES & DIRECTORIES
+ 
+   ->Another useful option is to change file permission to the group owning the file. Perhaps you create the files, 
+     but people on the db2 team can write/execute as well. We use chgrp for this purpose.By issuing the command - chgrp “name of the group” “name of the file” 
+     – you can change this.
+     
+   chgrp db2    workfolder
+   chgrp sales  salesfolder
+   chgrp devOps testfile
+   
+   Note: The group must exit before you try to assign groups to files and directories.
+   
+   
+   
+=====================================================================================================================================
+  
+  chown – CHANGING OWNERSHIP
+    
+    ->Another helpful command is changing ownerships of files and directories. 
+      The command is “chwon” along with “name of new owner” & “name of file.”
+      
+      chown dibya testfile
+      chown dhard workfolder
+      
+    ->We can also combine the group and ownership command by:
+    
+      chown -R dhard:devOps /home/roman/devfiles
+      
+    ->The above command gives dhard the ownership of the directory devfiles, and all files and subfolders.
+      The -R stands for recursive which is why all sub folders and files belong to dhard as well. The -R will transfer 
+      ownership of all sub directories to the new owner.
+      
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
