@@ -23,6 +23,11 @@
       icacls "C:\Vacation Pictures" /grant Authenticated Users:(OI)(CI)(R)
                 <File/Dir Path>                          <DACL>
                 
- #TO remove group everyone/(any other group or users)  to access file/dir             
+ #To remove group everyone/(any other group or users)  to access file/dir             
                
     "C:\Users\Dibya\Desktop\Sample" /Remove Everyone
+    
+    
+    
+ #To read more about permission check the following URL
+    https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771375(v%3dws.10)
