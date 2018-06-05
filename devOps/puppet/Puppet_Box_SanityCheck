@@ -1,0 +1,30 @@
+1)Check Puppet & Other tools version
+
+puppet --version
+
+hiera  --version
+
+facter --version
+
+========================================================================================================================
+
+2)Check some Important configuration before starting off
+
+ 2.1)To get puppet config file path run
+     puppet config print config
+     
+ 2.2.1)To Check the puppet environment run 
+     puppet config print environment
+     
+ 2.2.2)To set the puppet environment run
+     puppet config set environment <stage/production/dev>
+     
+ 2.3)To check whether we can list the module run
+     puppet module list --tree
+     
+ 2.4.1)To get hiera config file path run
+     puppet config print hiera_config
+     
+ 2.4.2)To set hiera config file path run
+     puppet config set hiera_config <Path to hiera.yaml file>
+ 
