@@ -1,0 +1,24 @@
+>>>Check the URI before starting up:
+
+https://www.howtogeek.com/137803/geek-school-learn-how-to-automate-windows-with-powershell/
+https://www.howtogeek.com/141495/geek-school-writing-your-first-full-powershell-script/
+
+>>>To Find about how parameter sets are designed for powershell cmdlet
+
+http://blog.simonw.se/powershell-functions-and-parameter-sets/
+================================================================================================================================
+
+>>>To update the help files
+   Run Update-Help
+
+>>>To find information about some command let for eg need to know what cmdlet/function available about process:
+   Run  Get-Help *process*
+
+>>>Once you select particular cmdlet to dig further we can use
+   Run  Get-Help Get-Process /  Get-Help Get-Process -Full
+
+>>>To Know about particular parameter like ComputerName we can use
+   Run  Get-Help Get-Process -parameter ComputerName
+   
+>>>To list all the possible parameter sets for Get-Process run
+   Run   Get-Command -Name Get-Process -Syntax
